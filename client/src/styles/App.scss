@@ -1,5 +1,9 @@
 @import './variables';
 
-.app {
-    @include slack-font;
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  font-size: 1rem;
+  line-height: 1rem;
 }

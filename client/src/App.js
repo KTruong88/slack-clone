@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
+import ChannelsListContainer from './components/channels-list-container/ChannelsListContainer';
+import MainContainer from './components/main-container/MainContainer';
 import './styles/App.scss';
 
-function App() {
+const App = () => {
   return (
-    <div className="">
-      
+    <div className="app-container">
+      <ChannelsListContainer></ChannelsListContainer>
+      <MainContainer></MainContainer>
     </div>
   );
 }

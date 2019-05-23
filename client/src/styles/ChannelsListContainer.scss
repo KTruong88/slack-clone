@@ -1,0 +1,14 @@
+@import './variables';
+
+
+.channels-container {
+  @include slack-font;
+  position: relative;
+  height: 100%;
+  z-index: 200;
+  display: flex;
+  flex-shrink: 0;
+  flex-basis: 220px;
+  flex-direction: column;
+  background-color: $color__primary;
+}
