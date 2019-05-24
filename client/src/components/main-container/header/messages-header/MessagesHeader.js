@@ -1,7 +1,6 @@
 import React from 'react';
 
 import '../../../../styles/MessagesHeader.scss';
-import Locked from '@carbon/icons-react/es/locked/16';
 import Star from '@carbon/icons-react/es/star/16';
 import User from '@carbon/icons-react/es/user/16';
 import Edit from '@carbon/icons-react/es/edit/16';
@@ -12,7 +11,8 @@ const MessagesHeader = () => {
       <div className="channel_title">
         <div className="channel_name_container">
           <span className="channel_name">
-            <Locked className="icon_locked"></Locked>
+            {/* <Locked className="icon_locked"></Locked> */}
+            <img src={require('../../../../shared/icons/padlock.svg')} alt="icon of a lock by Dave Gandy" className="icon_lock"/>
             bm-jenkins-dev
           </span>
         </div>
@@ -27,7 +27,8 @@ const MessagesHeader = () => {
           </div>
           <div className="info_separator">|</div>
           <div className="channel_header_info_item btn_add_topic">
-            <Edit className="icon_edit"></Edit>
+            {/* <Edit className="icon_edit"></Edit> */}
+            <img src={require('../../../../shared/icons/edit.svg')} alt="icon of a lock by Slir" className="icon_edit"/>
             Add a topic
           </div>
         </div>
