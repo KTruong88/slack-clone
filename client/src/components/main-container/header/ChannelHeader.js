@@ -9,6 +9,7 @@ const ChannelHeader = () => {
   return (
     <div className="container">
       <MessagesHeader></MessagesHeader>
+      <FlexHeader></FlexHeader>
     </div>
   );
 }

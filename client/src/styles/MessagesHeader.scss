@@ -3,6 +3,7 @@
 
 .messages_header {
   display: flex;
+  justify-content: space-between;
   flex: 1;
   color: #616061;
 }
@@ -78,7 +79,7 @@
   margin-bottom: 1px;
 
   &:hover {
-    fill: $color__logo-yellow;
+    fill: $color_logo_yellow;
   }
 }
 
@@ -87,11 +88,11 @@
 
   &:hover {
     .icon_user{
-      fill: $color__accessible-blue;
+      fill: $color_accessible_blue;
     }
 
     .users_count {
-      color: $color__accessible-blue;
+      color: $color_accessible_blue;
     }
   }
 }
@@ -120,7 +121,7 @@
   align-items: center;
   cursor: pointer;
   color: #616061;
-  padding: 3px;
+  padding: 3px 3px 3px 7px;
   border-radius: 4px;
   border: 1px solid transparent;
 

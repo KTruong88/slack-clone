@@ -1,0 +1,33 @@
+@import './variables';
+
+
+.channel_info {
+  display: flex;
+  align-items: center;
+  color: #616061;
+  margin: 3px 8px 0 0;
+}
+
+.channel_info_btns {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.icon_phone {
+  &:hover {
+    fill: $color_accessible_blue;
+  }
+}
+
+.icon_info {
+  &:hover {
+    fill: $color_accessible_blue;
+  }
+}
+
+.icon_settings {
+  &:hover {
+    fill: $color_accessible_blue;
+  }
+}
