@@ -1,0 +1,36 @@
+@import './variables';
+
+
+.channel_header_buttons {
+  display: flex;
+  color: $color_gray;
+  fill: $color_gray;
+  margin: 3px 8px 9px 0px;
+}
+
+.icon_at {
+  cursor: pointer;
+
+  &:hover {
+    fill: $color_logo_red;
+  }
+}
+
+.flex_icon_star {
+  cursor: pointer;
+
+  &:hover {
+    fill: $color_logo_yellow;
+  }
+}
+
+.icon_overflow {
+  cursor: pointer;
+
+  height: 20px;
+  width: 20px;
+
+  &:hover {
+    fill: $color_accessible_blue;
+  }
+}
