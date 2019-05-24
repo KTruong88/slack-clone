@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import ChannelHeader from './header/ChannelHeader';
 import MessagesContainer from './messages-container/MessagesContainer';
+import Footer from './footer/footer';
 
 import '../../styles/MainContainer.scss';
 
@@ -12,6 +13,7 @@ const MainContainer = () => {
     <div className="main_container">
       <ChannelHeader></ChannelHeader>
       <MessagesContainer></MessagesContainer>
+      <Footer></Footer>
     </div>
   );
 }

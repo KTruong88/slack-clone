@@ -1,0 +1,103 @@
+@import './variables';
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0 16px;
+  margin-top: auto;
+}
+
+.text_bar {
+  display: flex;
+}
+
+.text_bar_btn {
+  border: none;
+  background: transparent;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.icon_add {
+  height: 24px;
+  width: 24px;
+  fill: $color_gray;
+  cursor: pointer;
+  padding: 7px;
+  border: 2px solid #868686;
+  transition: background 50ms, color 50ms;
+  border-radius: 6px 0 0 6px;
+
+  &:hover {
+    fill: #fff;
+    background-color: $color_logo_green;
+  }
+}
+
+.text_input {
+  height: 36px;
+  width: 100%;
+  margin-left: -9px;
+  text-indent: 6px;
+  font-size: 14px;
+  margin-top: 1px;
+  border: 2px solid #868686;
+  border-right: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.notification_bar {
+  height: 22px;
+  width: 100%;
+}
+
+.footer_icon {
+  border: none;
+  height: 42px;
+  margin-top: 1px;
+  padding-left: 4px;
+  padding-right: 4px;
+  background: transparent;
+}
+
+.at_btn {
+  border-top: 2px solid #868686;
+  border-bottom: 2px solid #868686;
+}
+
+.face_btn {
+  padding-right: 10px;
+  border-radius: 0 6px 6px 0;
+  border-right: 2px solid #868686;
+  border-top: 2px solid #868686;
+  border-bottom: 2px solid #868686;
+}
+
+.footer_icon_at {
+  fill: $color_gray;
+  cursor: pointer;
+  transition: all .15s;
+
+  &:hover {
+    transform: scale(1.3);
+    fill: $color_accessible_blue;
+  }
+}
+
+.icon_face {
+  fill: $color_gray;
+  cursor: pointer;
+  transition: all .15s;
+
+  &:hover {
+    transform: scale(1.3);
+    fill: $color_logo_yellow;
+  }
+}

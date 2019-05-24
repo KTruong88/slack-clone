@@ -4,8 +4,7 @@
 .flex_header {
   display: flex;
   height: 100%;
-  margin: 2px 0 0;
-  padding: 0 10px 0 0;
+  margin: 2px 0;
   width: 280px;
   -webkit-transition: width .15s ease-out 0s;
   -moz-transition: width .15s ease-out 0s;
@@ -37,10 +36,11 @@
 .search_form {
   display: flex;
   align-items: center;
+  font-size: 14px;
   padding: 2px 0;
-  height: 30px;
+  height: 28px;
   width: 100%;
-  margin-top: 2px;
+  margin-top: 3px;
   border-radius: .35rem;
   border: 1px solid #868686;
   cursor: pointer;
@@ -72,6 +72,5 @@
 
 .search_form_text {
   margin-left: 5px;
-  margin-bottom: 2px;
   color: rgba(0, 0, 0, .4);
 }
