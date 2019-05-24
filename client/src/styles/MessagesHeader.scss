@@ -1,0 +1,18 @@
+@import './variables';
+
+
+.messages-header {
+  display: flex;
+  flex: 1;
+  color: #616061;
+}
+
+.channel-title {
+  margin-top: -2px;
+}
+
+.channel-info {
+  display: flex;
+  color: #616061;
+  margin: 3px 8px 0 0;
+}
