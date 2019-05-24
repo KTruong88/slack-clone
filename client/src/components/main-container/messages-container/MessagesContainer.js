@@ -4,7 +4,7 @@ import '../../../styles/MessagesContainer.scss';
 
 const MessagesContainer = () => {
   return (
-    <div className="client-body">
+    <div className="client_body">
     
     </div>
   );

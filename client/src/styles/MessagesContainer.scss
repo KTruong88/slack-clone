@@ -1,13 +1,12 @@
 @import './variables';
 
 
-.client-body {
+.client_body {
   &::before {
     box-sizing: border-box;
     position: absolute;
     left: 0;
     right: 0;
-    height: 8px;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     content: '';
     z-index: 200;

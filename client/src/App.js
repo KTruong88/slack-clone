@@ -6,7 +6,7 @@ import './styles/App.scss';
 
 const App = () => {
   return (
-    <div className="app-container">
+    <div className="app_container">
       <ChannelsListContainer></ChannelsListContainer>
       <MainContainer></MainContainer>
     </div>

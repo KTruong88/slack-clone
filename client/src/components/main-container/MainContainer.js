@@ -9,7 +9,7 @@ const MainContainer = () => {
   const [state, setState] = useState({});
 
   return (
-    <div className="main-container">
+    <div className="main_container">
       <ChannelHeader></ChannelHeader>
       <MessagesContainer></MessagesContainer>
     </div>

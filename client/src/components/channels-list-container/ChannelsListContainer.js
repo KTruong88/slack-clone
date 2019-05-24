@@ -4,7 +4,7 @@ import '../../styles/ChannelsListContainer.scss';
 
 const ChannelsListContainer = () => {
   return (
-    <div class="channels-container">
+    <div class="channels_container">
       
     </div>
   );
