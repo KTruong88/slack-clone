@@ -1,5 +1,6 @@
 import React from 'react';
 
+import ChannelsList from './channels-list/ChannelsList';
 import '../../../styles/ChannelsSidebar.scss';
 import Menu from '@carbon/icons-react/es/menu/16';
 import Chat from '@carbon/icons-react/es/chat/16';
@@ -21,6 +22,7 @@ const ChannelsSidebar = () => {
         <Chat className="sidebar_btn"></Chat>
         <div>Threads</div>
       </div>
+      <ChannelsList></ChannelsList>
     </div>
   );
 }
