@@ -16,6 +16,7 @@ $color_primary: #4A154B;
 $color_primary_null: #611F69;
 $color_primary_active: #7C3085;
 
+$color_white: #fff;
 $color_gray: #616061;
 
 // Actual Slack font is Larsseit(premium)
@@ -27,3 +28,10 @@ $color_gray: #616061;
 @mixin slack-font {
   @include lato;
 } 
+
+// Global styles
+.overflow_ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

@@ -1,0 +1,74 @@
+@import './variables';
+
+
+.channels_list_header {
+  display: flex;
+  flex-direction: column;
+  height: 61px;
+  margin-bottom: -2px;
+  margin-top: .5625rem;
+  line-height: 1.075rem;
+  font-size: 1rem;
+  padding: 0 1rem;
+  color: $color_white;
+  border-bottom: 1px solid #3f0e40;
+  font-weight: 900;
+  cursor: pointer;
+
+  &:hover {
+    .icon_chevron_down {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+
+    .menu_user_name {
+      color: $color_white;
+    }
+  }
+}
+
+.channel_name_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team_name {
+  font-size: 1.125rem;
+  line-height: 1.375;
+  max-width: 9.12rem;
+}
+
+.icon_chevron_down {
+  fill: $color_white;
+  height: 12px;
+  opacity: .6;
+  margin-top: -2px;
+  padding: 0 4px 4px 0;
+}
+
+.icon_notification {
+  fill: $color_white;
+  opacity: .6;
+  margin-top: 3px;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.menu_user {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-left: -5px;
+  position: relative;
+  color: #ab9ba9;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.icon_recording_filled {
+  height: 10px;
+  fill: $color_logo_green;
+}

@@ -68,7 +68,7 @@
 
 .info_separator {  
   opacity: .5;
-  margin-right: .4rem;
+  margin-right: .3rem;
 }
 
 .icon_star {
@@ -123,6 +123,7 @@
   color: $color_gray;
   padding: 3px 3px 3px 7px;
   border-radius: 4px;
+  margin-left: -4px;
   border: 1px solid transparent;
 
   &:hover {

@@ -33,7 +33,7 @@
   border-radius: 6px 0 0 6px;
 
   &:hover {
-    fill: #fff;
+    fill: $color_white;
     background-color: $color_logo_green;
   }
 }
@@ -47,6 +47,10 @@
   margin-top: 1px;
   border: 2px solid #868686;
   border-right: none;
+
+  &::placeholder {
+    opacity: .75;
+  }
 
   &:focus {
     outline: none;
