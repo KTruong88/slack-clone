@@ -1,10 +1,9 @@
 import React from 'react';
 
-import '../../../../styles/ChannelsList.scss';
 
-const renderList = () => {
+const renderDirectMessages = () => {
   // TODO: map it from props
-  const channels = ['Disney', 'Star Wars', 'NBA Jam', 'Studio 52', 'TNT', 'NFL Football'];
+  const channels = ['Pikachu', 'Charmander', 'Squirtle', 'Bulbasaur', 'Ash', 'Mysty'];
 
   return (
     channels.map(channel => {
@@ -17,14 +16,13 @@ const renderList = () => {
     })
   )
 }
-
-const ChannelsList = () => {
+const DirectMessages = () => {
   return (
     <div className="sidebar_list_container">
-      <div className="sidebar_title">Channels</div>
-      {renderList()}
+      <div className="sidebar_title">Direct Messages</div>
+      {renderDirectMessages()}
     </div>
   );
 }
 
-export default ChannelsList;
+export default DirectMessages;
