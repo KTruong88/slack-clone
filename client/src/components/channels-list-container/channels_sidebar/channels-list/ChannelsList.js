@@ -7,11 +7,11 @@ const renderList = () => {
   const channels = ['Disney', 'Star Wars', 'NBA Jam', 'Studio 52', 'TNT', 'NFL Football'];
 
   return (
-    channels.map(channel => {
+    channels.map((channel, idx) => {
       return (
-        <div className="sidebar_btn_wrapper ">
-          <div className="sidebar_channel_messages">
-          <span className="sidebar_icon">#</span>{channel}</div>
+        <div key={idx} className="sidebar_btn_wrapper ">
+          <div key={idx} className="sidebar_channel_messages">
+          <span key={idx} className="sidebar_icon">#</span>{channel}</div>
         </div>
       );
     })
