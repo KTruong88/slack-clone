@@ -1,0 +1,51 @@
+@import './variables';
+
+
+.sidebar_container {
+  height: 100%;
+}
+
+.sidebar_btn_container {
+  height: 52px;
+}
+
+.sidebar_jumper {
+  display: block;
+  display: flex;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+  height: 24px;
+  width: 176px;
+  top: 4px;
+  margin-left: 14px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: color .1s ease-out;
+  background-color: rgb(38, 0, 39);
+}
+
+.icon_jump_to {
+  margin-right: 4px;
+  fill: rgb(197, 183, 198);
+}
+
+.sidebar_btn_unread {
+  display: flex;
+  align-items: center;
+  height: 26px;
+  line-height: 26px;
+  width: 100%;
+  border-radius: 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #350D36;
+  }
+}
+
+.sidebar_btn {
+  height: 12px;
+  margin: 0 4px 0 12px;
+  fill: rgb(197, 183, 198);
+}

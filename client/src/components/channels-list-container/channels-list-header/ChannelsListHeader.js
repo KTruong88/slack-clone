@@ -15,7 +15,7 @@ const ChannelsListHeader = () => {
           <Notification className="icon_notification"></Notification>
         </span>
       </div>
-      <div class="menu_user overflow_ellipsis">
+      <div className="menu_user overflow_ellipsis">
         <RecordingFilled className="icon_recording_filled"></RecordingFilled>
         <div className="menu_user_name">Kevin Truong</div>
       </div>
