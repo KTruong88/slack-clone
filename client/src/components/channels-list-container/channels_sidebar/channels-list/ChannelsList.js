@@ -4,13 +4,13 @@ import '../../../../styles/ChannelsList.scss';
 
 const renderList = () => {
   // TODO: map it from props
-  const channels = ['Disney', 'Star Wars', 'NBA Jam', 'Studio 52', 'TNT', 'NFL Football'];
+  const channels = ['disney', 'star wars: the empire strikes back', 'nba jam', 'studio 52', 'tnt', 'nfl football'];
 
   return (
     channels.map((channel, idx) => {
       return (
         <div key={idx} className="sidebar_btn_wrapper ">
-          <div key={idx} className="sidebar_channel_messages">
+          <div key={idx} className="sidebar_channel_messages overflow_ellipsis">
           <span key={idx} className="sidebar_icon">#</span>{channel}</div>
         </div>
       );
