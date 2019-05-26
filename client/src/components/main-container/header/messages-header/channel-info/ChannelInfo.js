@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../../../../styles/ChannelInfo.scss';
+import '../../../../../styles/ChannelInfo.scss';
 import Phone from '@carbon/icons-react/es/phone/20';
 import Information from '@carbon/icons-react/es/information/20';
 import Settings from '@carbon/icons-react/es/settings/20';

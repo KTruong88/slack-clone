@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ChannelInfo from '../channel-info/ChannelInfo';
+import ChannelInfo from './channel-info/ChannelInfo';
 import '../../../../styles/MessagesHeader.scss';
 import Star from '@carbon/icons-react/es/star/16';
 import User from '@carbon/icons-react/es/user/16';
