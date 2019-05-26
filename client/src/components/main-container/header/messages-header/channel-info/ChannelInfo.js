@@ -10,17 +10,17 @@ const ChannelInfo = () => {
     <div className="channel_info">
       <div className="channel_calls_container">
         <button className="channel_info_btns">
-          <Phone className="icon_phone" title="Start a call with Cisco Webex Meetings"></Phone>
+          <Phone className="icon_phone" title="Start a call with Cisco Webex Meetings" />
         </button>
       </div>
       <div className="channel_details_toggle">
         <button className="channel_info_btns">
-          <Information className="icon_info" title="Show Channel Details"></Information>
+          <Information className="icon_info" title="Show Channel Details" />
         </button>
       </div>
       <div className="channel_actions_toggle">
         <button className="channel_info_btns">
-          <Settings className="icon_settings" title="Channel Settings"></Settings>
+          <Settings className="icon_settings" title="Channel Settings" />
         </button>
       </div>
     </div>

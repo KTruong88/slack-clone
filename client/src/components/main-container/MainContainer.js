@@ -11,9 +11,9 @@ const MainContainer = () => {
 
   return (
     <div className="main_container">
-      <ChannelHeader></ChannelHeader>
-      <MessagesContainer></MessagesContainer>
-      <Footer></Footer>
+      <ChannelHeader />
+      <MessagesContainer />
+      <Footer />
     </div>
   );
 }

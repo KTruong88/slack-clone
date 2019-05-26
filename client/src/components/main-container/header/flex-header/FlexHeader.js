@@ -10,11 +10,11 @@ const FlexHeader = () => {
     <div className="flex_header">
       <div className="search_container">
         <form className="search_form">
-          <Search className="icon_search"></Search>
+          <Search className="icon_search" />
           <div className="search_form_text">Search</div>
         </form>
       </div>
-      <FlexHeaderActions></FlexHeaderActions>
+      <FlexHeaderActions />
     </div>
   );
 }

@@ -12,20 +12,20 @@ const ChannelsSidebar = () => {
     <div className="sidebar_container">
       <div className="sidebar_btn_container">
         <div className="sidebar_jumper">
-          <Menu className="icon_jump_to"></Menu>
+          <Menu className="icon_jump_to" />
           <div>Jump to...</div>
         </div>
       </div>
       <div className="sidebar_btn_unread">
-        <Menu className="sidebar_btn"></Menu>
+        <Menu className="sidebar_btn" />
         <div>All Unreads</div>
       </div>
       <div className="sidebar_btn_unread">
-        <Chat className="sidebar_btn"></Chat>
+        <Chat className="sidebar_btn" />
         <div>Threads</div>
       </div>
-      <ChannelsList></ChannelsList>
-      <DirectMessages></DirectMessages>
+      <ChannelsList />
+      <DirectMessages />
     </div>
   );
 }

@@ -10,17 +10,17 @@ const Footer = () => {
     <div className="footer">
       <div className="text_bar">
         <button className="text_bar_btn">
-          <Add className="icon_add"></Add>
+          <Add className="icon_add" />
         </button>
         <input className="text_input" placeholder="Message bm-jenkins-dev" />
         <button className="footer_icon at_btn">
-         <At className="footer_icon_at"></At>
+         <At className="footer_icon_at" />
         </button>
         <button className="footer_icon face_btn">
-          <Face className="icon_face"></Face>
+          <Face className="icon_face" />
         </button>
       </div>
-      <div className="notification_bar"></div>
+      <div className="notification_bar" />
     </div>
   );
 }

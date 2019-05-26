@@ -9,13 +9,13 @@ const FlexHeaderActions = () => {
   return (
     <div className="channel_header_buttons">
       <button className="channel_info_btns" title="Show Activity">
-        <At className="icon_at"></At>
+        <At className="icon_at" />
       </button>
       <button className="channel_info_btns" title="Show Starred Items">
-        <Star className="flex_icon_star"></Star>
+        <Star className="flex_icon_star" />
       </button>
       <button className="channel_info_btns" title="More Items">
-        <Overflow className="icon_overflow"></Overflow>
+        <Overflow className="icon_overflow" />
       </button>
     </div>
   );

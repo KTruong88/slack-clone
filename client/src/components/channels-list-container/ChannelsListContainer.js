@@ -8,8 +8,8 @@ import '../../styles/ChannelsListContainer.scss';
 const ChannelsListContainer = () => {
   return (
     <div className="channels_container">
-      <ChannelsListHeader></ChannelsListHeader>
-      <ChannelsSidebar></ChannelsSidebar>
+      <ChannelsListHeader />
+      <ChannelsSidebar />
     </div>
   );
 }

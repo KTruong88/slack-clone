@@ -7,6 +7,7 @@ const renderList = () => {
   const channels = ['disney', 'star wars: the empire strikes back', 'nba jam', 'studio 52', 'tnt', 'nfl football'];
 
   return (
+    // TODO: change key from index to a unique id for performance
     channels.map((channel, idx) => {
       return (
         <div key={idx} className="sidebar_btn_wrapper ">

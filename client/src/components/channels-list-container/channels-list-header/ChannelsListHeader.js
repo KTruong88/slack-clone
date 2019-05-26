@@ -11,12 +11,12 @@ const ChannelsListHeader = () => {
       <div className="channel_name_wrap">
         <div className="team_name overflow_ellipsis">MD&I - IBM Market Development and Insights</div>
         <span>
-          <ChevronDown className="icon_chevron_down"></ChevronDown>
-          <Notification className="icon_notification"></Notification>
+          <ChevronDown className="icon_chevron_down" />
+          <Notification className="icon_notification" />
         </span>
       </div>
       <div className="menu_user overflow_ellipsis">
-        <RecordingFilled className="icon_recording_filled"></RecordingFilled>
+        <RecordingFilled className="icon_recording_filled" />
         <div className="menu_user_name">Kevin Truong</div>
       </div>
     </div>

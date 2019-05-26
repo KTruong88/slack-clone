@@ -10,10 +10,11 @@ const renderDirectMessages = () => {
   return (
     users.map((user, idx) => {
       return (
+        // TODO: change key from index to a unique id for performance
         <div key={idx} className="sidebar_btn_wrapper">
           <div key={idx} className="sidebar_channel_messages">
           <span key={idx} className="sidebar_messages_icon">
-            <Recording className="icon_recording"></Recording>
+            <Recording className="icon_recording" />
           </span>{user}</div>
         </div>
       );

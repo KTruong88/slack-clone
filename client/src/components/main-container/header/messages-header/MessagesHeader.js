@@ -19,11 +19,11 @@ const MessagesHeader = () => {
         
         <div className="channel_header_info">
           <div className="channel_header_info_item" title="Star this channel">
-            <Star className="icon_star"></Star>
+            <Star className="icon_star" />
           </div>
           <div className="info_separator">|</div>
           <div className="channel_header_info_item btn_member_list" title="View member list">
-            <User className="icon_user"></User>
+            <User className="icon_user" />
             <span className="users_count">25</span>
           </div>
           <div className="info_separator">|</div>
@@ -37,7 +37,7 @@ const MessagesHeader = () => {
           </div> */}
         </div>
       </div>
-      <ChannelInfo></ChannelInfo>
+      <ChannelInfo />
     </div>
   );
 }
