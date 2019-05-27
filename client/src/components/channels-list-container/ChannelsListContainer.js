@@ -12,15 +12,14 @@ const ChannelsListContainer = (props) => {
   return (
     <div className="channels_container">
       <ChannelsListHeader />
-      <ChannelsSidebar age={props.user.age}/>
-      <button onClick={() => props.setName()}>Async</button>
+      <ChannelsSidebar />
     </div>
   );
 };
 
 const mapStateToProps = (state) => {
   return {
-    user: state.user
+    message: state.message
   };
 };
 

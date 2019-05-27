@@ -8,8 +8,7 @@ const user = (state = initialState, action) => {
     case 'SET_NAME':
       state = {
         ...state,
-        name: action.payload,
-        // lastValues: [...state.lastValues, action.payload]
+        name: action.payload
       }
       break;
   }
