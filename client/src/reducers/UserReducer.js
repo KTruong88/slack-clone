@@ -1,27 +1,19 @@
 const initialState = {
-  firstName: 'Kevin',
-  lastName: 'Truong',
-  age: 30,
+  name: 'Kevin Truong',
+  age: 30
 };
 
-const UserReducer = (state = initialState, action) => {
+const user = (state = initialState, action) => {
   switch (action.type) {
-    case 'ADD':
+    case 'SET_NAME':
       state = {
         ...state,
-        result: state.result + action.payload,
-        lastValues: [...state.lastValues, action.payload]
+        name: action.payload,
+        // lastValues: [...state.lastValues, action.payload]
       }
-      break;
-    case 'SUBTRACT':
-      state = {
-        ...state,
-        result: state.result - action.payload,
-        lastValues: [...state.lastValues, action.payload]
-      };
       break;
   }
   return state;
 };
 
-export default UserReducer;
+export default user;

@@ -7,8 +7,8 @@ import './styles/App.scss';
 const App = () => {
   return (
     <div className="app_container">
-      <ChannelsListContainer></ChannelsListContainer>
-      <MainContainer></MainContainer>
+      <ChannelsListContainer />
+      <MainContainer />
     </div>
   );
 }

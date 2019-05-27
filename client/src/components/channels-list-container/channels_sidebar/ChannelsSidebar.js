@@ -7,7 +7,7 @@ import '../../../styles/ChannelsSidebar.scss';
 import Menu from '@carbon/icons-react/es/menu/16';
 import Chat from '@carbon/icons-react/es/chat/16';
 
-const ChannelsSidebar = () => {
+const ChannelsSidebar = (props) => {
   return (
     <div className="sidebar_container">
       <div className="sidebar_btn_container">
