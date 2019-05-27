@@ -1,5 +1,3 @@
-import React from 'react';
-
 const initialState = {
  
 };
@@ -30,6 +28,8 @@ const message = (state = initialState, action) => {
         name: action.payload
       }
       break;
+
+    default: break;
   }
   return state;
 };

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import ChannelsListHeader from './channels-list-header/ChannelsListHeader';
 import ChannelsSidebar from './channels_sidebar/ChannelsSidebar';
@@ -12,7 +12,7 @@ const ChannelsListContainer = (props) => {
   return (
     <div className="channels_container">
       <ChannelsListHeader />
-      <ChannelsSidebar channels={props.channelsList}/>
+      <ChannelsSidebar channels={props.channelsList.channels}/>
     </div>
   );
 };

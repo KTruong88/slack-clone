@@ -4,12 +4,11 @@ import '../../../../styles/ChannelsList.scss';
 
 const renderList = (channels) => {
   return (
-    // TODO: change key from index to a unique id for performance
-    channels.map((channel, idx) => {
+    channels.map(channel => {
       return (
-        <div key={idx} className="sidebar_btn_wrapper ">
-          <div key={idx} className="sidebar_channel_messages overflow_ellipsis">
-          <span key={idx} className="sidebar_icon">#</span>{channel}</div>
+        <div key={channel.id} className="sidebar_btn_wrapper ">
+          <div key={channel.id} className="sidebar_channel_messages overflow_ellipsis">
+          <span key={channel.id} className="sidebar_icon">#</span>{channel.name}</div>
         </div>
       );
     })

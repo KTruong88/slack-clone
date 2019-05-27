@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import ChannelHeader from './header/ChannelHeader';
 import MessagesContainer from './messages-container/MessagesContainer';
@@ -9,21 +9,19 @@ import { connect } from 'react-redux';
 
 import '../../styles/MainContainer.scss';
 
-const MainContainer = () => {
-  const [state, setState] = useState({});
-  
+const MainContainer = (props) => {
   return (
     <div className="main_container">
       <ChannelHeader />
       <MessagesContainer />
-      <Footer />
+      <Footer currentChannel={props.channels.currentChannel} />
     </div>
   );
 };
 
 const mapStateToProps = (state) => {
   return {
-    user: state.user
+    channels: state.channelsList
   };
 };
 

@@ -1,8 +1,16 @@
-import React from 'react';
-
-const initialState = [
-  'disney', 'star wars: the empire strikes back', 'nba jam', 'studio 52', 'tnt', 'nfl football'
-];
+const initialState = {
+  channels: [
+    { id: 1, name: 'disney' },
+    { id: 2, name: 'star wars: the empire strikes back' },
+    { id: 3, name: 'nba jam' },
+    { id: 4, name: 'studio 52' },
+    { id: 5, name: 'tnt' },
+    { id: 6, name: 'nfl football' },
+  ],
+  currentChannel: [
+    { id: 1, name: 'disney' }
+  ]
+};
 
 const channelsList = (state = initialState, action) => {
   // switch (action.type) {

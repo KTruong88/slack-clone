@@ -11,6 +11,8 @@ const user = (state = initialState, action) => {
         name: action.payload
       }
       break;
+
+    default: break;
   }
   return state;
 };
