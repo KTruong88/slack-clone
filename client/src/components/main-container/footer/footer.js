@@ -23,6 +23,6 @@ const Footer = () => {
       <div className="notification_bar" />
     </div>
   );
-}
+};
 
 export default Footer;

@@ -28,6 +28,6 @@ const ChannelsSidebar = (props) => {
       <DirectMessages />
     </div>
   );
-}
+};
 
 export default ChannelsSidebar;

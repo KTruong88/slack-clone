@@ -19,7 +19,7 @@ const MainContainer = () => {
       <Footer />
     </div>
   );
-}
+};
 
 const mapStateToProps = (state) => {
   return {

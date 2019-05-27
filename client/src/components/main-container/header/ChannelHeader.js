@@ -12,6 +12,6 @@ const ChannelHeader = () => {
       <FlexHeader />
     </div>
   );
-}
+};
 
 export default ChannelHeader;

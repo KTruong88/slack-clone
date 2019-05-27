@@ -19,6 +19,6 @@ const FlexHeaderActions = () => {
       </button>
     </div>
   );
-}
+};
 
 export default FlexHeaderActions;

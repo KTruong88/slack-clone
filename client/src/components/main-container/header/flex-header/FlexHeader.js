@@ -17,6 +17,6 @@ const FlexHeader = () => {
       <FlexHeaderActions />
     </div>
   );
-}
+};
 
 export default FlexHeader;

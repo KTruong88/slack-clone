@@ -25,6 +25,6 @@ const ChannelInfo = () => {
       </div>
     </div>
   );
-}
+};
 
 export default ChannelInfo;

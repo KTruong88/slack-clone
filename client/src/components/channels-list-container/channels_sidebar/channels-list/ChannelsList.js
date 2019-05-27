@@ -16,8 +16,8 @@ const renderList = () => {
         </div>
       );
     })
-  )
-}
+  );
+};
 
 const ChannelsList = () => {
   return (
@@ -26,6 +26,6 @@ const ChannelsList = () => {
       {renderList()}
     </div>
   );
-}
+};
 
 export default ChannelsList;

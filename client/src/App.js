@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BrowserRouter, Route, Link, NavLink } from 'react-router-dom';
 
 import ChannelsListContainer from './components/channels-list-container/ChannelsListContainer';
 import MainContainer from './components/main-container/MainContainer';
@@ -6,10 +7,12 @@ import './styles/App.scss';
 
 const App = () => {
   return (
-    <div className="app_container">
-      <ChannelsListContainer />
-      <MainContainer />
-    </div>
+    <BrowserRouter>
+      <div className="app_container">
+        <Route exact path='/' component={ChannelsListContainer} />
+        <Route exact path='/' component={MainContainer} />
+      </div>
+    </BrowserRouter>
   );
 }
 

@@ -16,7 +16,7 @@ const ChannelsListContainer = (props) => {
       <button onClick={() => props.setName()}>Async</button>
     </div>
   );
-}
+};
 
 const mapStateToProps = (state) => {
   return {

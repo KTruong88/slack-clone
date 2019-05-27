@@ -40,6 +40,6 @@ const MessagesHeader = () => {
       <ChannelInfo />
     </div>
   );
-}
+};
 
 export default MessagesHeader;

@@ -19,8 +19,8 @@ const renderDirectMessages = () => {
         </div>
       );
     })
-  )
-}
+  );
+};
 const DirectMessages = () => {
   return (
     <div className="sidebar_list_container">
@@ -28,6 +28,6 @@ const DirectMessages = () => {
       {renderDirectMessages()}
     </div>
   );
-}
+};
 
 export default DirectMessages;

@@ -1,0 +1,53 @@
+@import './variables';
+
+
+.message_line_container {
+  height: 57px;
+  width: 100%;
+}
+
+.message_line {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  font-size: 15px;
+  padding: 6px 0;
+}
+
+.message_gutter {
+  display: flex;
+  justify-content: flex-end;
+  width: 70px;
+  padding-right: 8px;
+}
+
+.icon_disney {
+  height: 50px;
+  border-radius: 3px;
+}
+
+.message_content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.message_sender {
+  color: #1d1c1d;
+  font-weight: 900;
+}
+
+.message_timestamp {
+  font-size: 12px;
+  font-weight: 400;
+  color: $color_gray;
+  margin-left: 6px;
+}
+
+.message_body {
+  display: inline-block;
+  width: 100%;
+  color: #1d1c1d;
+  word-wrap: break-word;
+  line-height: 1.46668;
+}
