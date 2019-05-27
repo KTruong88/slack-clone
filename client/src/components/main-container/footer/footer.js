@@ -5,14 +5,14 @@ import At from '@carbon/icons-react/es/at/20';
 import Face from '@carbon/icons-react/es/face--satisfied/20';
 import '../../../styles/Footer.scss';
 
-const Footer = () => {
+const Footer = (props) => {
   return (
     <div className="footer">
       <div className="text_bar">
         <button className="text_bar_btn">
           <Add className="icon_add" />
         </button>
-        <input className="text_input" placeholder="Message bm-jenkins-dev" />
+        <input className="text_input" placeholder="Message disney" />
         <button className="footer_icon at_btn">
          <At className="footer_icon_at" />
         </button>

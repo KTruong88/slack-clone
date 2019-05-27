@@ -6,10 +6,12 @@ import thunk from 'redux-thunk';
 
 import message from '../reducers/messageReducer';
 import user from '../reducers/userReducer';
+import channelsList from '../reducers/channelsListReducer';
 
 const store = createStore(combineReducers({
   message,
-  user
+  user,
+  channelsList
   }), {},
   applyMiddleware(logger, thunk)
 );

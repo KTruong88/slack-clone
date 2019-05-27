@@ -24,7 +24,7 @@ const ChannelsSidebar = (props) => {
         <Chat className="sidebar_btn" />
         <div>Threads</div>
       </div>
-      <ChannelsList />
+      <ChannelsList channels={props.channels}/>
       <DirectMessages />
     </div>
   );

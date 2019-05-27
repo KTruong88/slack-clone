@@ -2,10 +2,7 @@ import React from 'react';
 
 import '../../../../styles/ChannelsList.scss';
 
-const renderList = () => {
-  // TODO: map it from props
-  const channels = ['disney', 'star wars: the empire strikes back', 'nba jam', 'studio 52', 'tnt', 'nfl football'];
-
+const renderList = (channels) => {
   return (
     // TODO: change key from index to a unique id for performance
     channels.map((channel, idx) => {
@@ -19,11 +16,11 @@ const renderList = () => {
   );
 };
 
-const ChannelsList = () => {
+const ChannelsList = (props) => {
   return (
     <div className="sidebar_list_container">
       <div className="sidebar_title">Channels</div>
-      {renderList()}
+      {renderList(props.channels)}
     </div>
   );
 };

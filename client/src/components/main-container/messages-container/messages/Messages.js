@@ -73,7 +73,7 @@ const Messages = (props) => {
               <span className="message_timestamp">2:05 PM</span>
             </div>
             <div className="message_body">
-              What’ s a royal ball ? After all, I suppose it would be frightfully dull, and boring, and completely… completely wonderful.
+              What’s a royal ball ? After all, I suppose it would be frightfully dull, and boring, and completely… completely wonderful.
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@ const MessagesHeader = () => {
           <span className="channel_name">
             {/* <Locked className="icon_locked"></Locked> */}
             <img src={require('../../../../shared/icons/padlock.svg')} alt="icon of a lock by Dave Gandy" className="icon_lock"/>
-            bm-jenkins-dev
+            disney
           </span>
         </div>
         
@@ -31,10 +31,6 @@ const MessagesHeader = () => {
             <img src={require('../../../../shared/icons/edit.svg')} alt="icon of a lock by Slir" className="icon_edit"/>
             Add a topic
           </div>
-          {/* TODO: reveal when hovering over Add a topic */}
-          {/* <div className="channel_header_info_item btn_add_topic">
-            Edit
-          </div> */}
         </div>
       </div>
       <ChannelInfo />

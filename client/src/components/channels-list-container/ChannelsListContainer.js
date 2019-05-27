@@ -12,14 +12,14 @@ const ChannelsListContainer = (props) => {
   return (
     <div className="channels_container">
       <ChannelsListHeader />
-      <ChannelsSidebar />
+      <ChannelsSidebar channels={props.channelsList}/>
     </div>
   );
 };
 
 const mapStateToProps = (state) => {
   return {
-    message: state.message
+    channelsList: state.channelsList
   };
 };
 
