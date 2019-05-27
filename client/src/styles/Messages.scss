@@ -1,6 +1,11 @@
 @import './variables';
 
 
+.messages_wrap {
+  height: 100%;
+  overflow-y: scroll;
+}
+
 .message_line_container {
   height: 57px;
   width: 100%;
