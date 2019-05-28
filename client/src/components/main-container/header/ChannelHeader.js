@@ -5,10 +5,10 @@ import FlexHeader from './flex-header/FlexHeader';
 
 import '../../../styles/ChannelHeader.scss';
 
-const ChannelHeader = () => {
+const ChannelHeader = (props) => {
   return (
     <div className="container">
-      <MessagesHeader />
+      <MessagesHeader currentChannel={props.currentChannel} />
       <FlexHeader />
     </div>
   );

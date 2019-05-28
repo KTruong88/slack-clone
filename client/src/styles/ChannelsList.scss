@@ -36,9 +36,17 @@
   margin-right: 7px;
 }
 
-.sidebar_channel_messages {
+.sidebar_channel {
   width: 87%;
   margin-left: 15px;
   transition: color .1s ease-out;
+}
 
+.selected_channel {
+  color: $color_white;
+  background-color: #1164A3;
+  // Override other hover color
+  &:hover {
+    background-color: #1164A3;
+  }
 }

@@ -2,13 +2,23 @@ import React from 'react';
 
 import '../../../../styles/ChannelsList.scss';
 
-const renderList = (channels) => {
+const setChannelBackground = (channel, currentChannel) => {
+  if (channel === currentChannel) {
+    return 'selected_channel';
+  }
+};
+
+const renderList = (props, currentChannel) => {
   return (
-    channels.map(channel => {
+    props.channels.map(channel => {
       return (
-        <div key={channel.id} className="sidebar_btn_wrapper ">
-          <div key={channel.id} className="sidebar_channel_messages overflow_ellipsis">
-          <span key={channel.id} className="sidebar_icon">#</span>{channel.name}</div>
+        <div key={channel.id}
+             className={`${setChannelBackground(channel.name, currentChannel)} sidebar_btn_wrapper`}
+          >
+          <div key={channel.id}
+               onClick={() => props.setCurrentChannel(channel)}
+               className="sidebar_channel overflow_ellipsis">
+          <span key={channel.id} className="sidebar_icon">#</span >{channel.name}</div>
         </div>
       );
     })
@@ -16,10 +26,12 @@ const renderList = (channels) => {
 };
 
 const ChannelsList = (props) => {
+  const currentChannel = props.currentChannel.name;
+  
   return (
     <div className="sidebar_list_container">
       <div className="sidebar_title">Channels</div>
-      {renderList(props.channels)}
+      {renderList(props, currentChannel)}
     </div>
   );
 };

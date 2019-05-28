@@ -5,15 +5,16 @@ import '../../../../styles/MessagesHeader.scss';
 import Star from '@carbon/icons-react/es/star/16';
 import User from '@carbon/icons-react/es/user/16';
 
-const MessagesHeader = () => {
+const MessagesHeader = (props) => {
+  const currentChannel = props.currentChannel.name;
+
   return (
     <div className="messages_header">
       <div className="channel_title">
         <div className="channel_name_container">
           <span className="channel_name">
-            {/* <Locked className="icon_locked"></Locked> */}
             <img src={require('../../../../shared/icons/padlock.svg')} alt="icon of a lock by Dave Gandy" className="icon_lock"/>
-            disney
+            {currentChannel}
           </span>
         </div>
         

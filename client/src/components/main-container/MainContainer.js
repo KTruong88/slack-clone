@@ -12,7 +12,7 @@ import '../../styles/MainContainer.scss';
 const MainContainer = (props) => {
   return (
     <div className="main_container">
-      <ChannelHeader />
+      <ChannelHeader currentChannel={props.channels.currentChannel}/>
       <MessagesContainer />
       <Footer currentChannel={props.channels.currentChannel} />
     </div>

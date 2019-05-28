@@ -6,7 +6,7 @@ import Face from '@carbon/icons-react/es/face--satisfied/20';
 import '../../../styles/Footer.scss';
 
 const Footer = (props) => {
-  const currentChannel = props.currentChannel[0].name;
+  const currentChannel = props.currentChannel.name;
 
   return (
     <div className="footer">
