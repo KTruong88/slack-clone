@@ -18,6 +18,8 @@ const channelsList = (state = initialState, action) => {
       currentChannel: action.payload
       }
       break;
+      
+    default: break;
   }
   return state;
 };

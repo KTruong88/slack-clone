@@ -12,8 +12,8 @@ import '../../styles/MainContainer.scss';
 const MainContainer = (props) => {
   return (
     <div className="main_container">
-      <ChannelHeader currentChannel={props.channels.currentChannel}/>
-      <MessagesContainer />
+      <ChannelHeader currentChannel={props.channels.currentChannel} />
+      <MessagesContainer messages={props.messages} />
       <Footer currentChannel={props.channels.currentChannel} />
     </div>
   );
@@ -21,7 +21,8 @@ const MainContainer = (props) => {
 
 const mapStateToProps = (state) => {
   return {
-    channels: state.channelsList
+    channels: state.channelsList,
+    messages: state.messages
   };
 };
 

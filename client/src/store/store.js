@@ -2,12 +2,12 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 
-import message from '../reducers/messageReducer';
+import messages from '../reducers/messageReducer';
 import user from '../reducers/userReducer';
 import channelsList from '../reducers/channelsListReducer';
 
 const store = createStore(combineReducers({
-  message,
+  messages,
   user,
   channelsList
   }), {},

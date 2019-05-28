@@ -19,9 +19,9 @@ export const setMessageBody = (msg) => {
   };
 };
 
-export const setMessageTimeStamp = (timeStamp) => {
+export const setMessageTimestamp = (timestamp) => {
   return {
     type: 'SET_MSG_TIMESTAMP',
-    payload: timeStamp
+    payload: timestamp
   };
 };
