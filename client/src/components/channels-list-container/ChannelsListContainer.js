@@ -3,6 +3,7 @@ import React from 'react';
 import ChannelsListHeader from './channels-list-header/ChannelsListHeader';
 import ChannelsSidebar from './channels_sidebar/ChannelsSidebar';
 import { setCurrentChannel } from '../../actions/channelsListActions';
+import { setNewMessages } from '../../actions/messageActions';
 
 import { connect } from 'react-redux';
 
@@ -16,6 +17,7 @@ const ChannelsListContainer = (props) => {
         channels={props.channelsList.channels}
         currentChannel={props.channelsList.currentChannel}
         setCurrentChannel={props.setCurrentChannel}
+        setNewMessages={props.setNewMessages}
         />
     </div>
   );
@@ -31,6 +33,9 @@ const mapDispatchToProps = (dispatch) => {
   return {
     setCurrentChannel: (channel) => {
       dispatch(setCurrentChannel(channel));
+    },
+    setNewMessages: (channelMessages) => {
+      dispatch(setNewMessages(channelMessages));
     }
   };
 };

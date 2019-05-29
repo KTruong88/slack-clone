@@ -8,7 +8,9 @@ const MessagesContainer = (props) => {
   return (
     <div className="client_body">
       <div className="date_pill">Today</div>
-      <Messages messages={props.messages}/>
+      <Messages messages={props.messages}
+                currentChannel={props.currentChannel}
+            />
     </div>
   );
 };

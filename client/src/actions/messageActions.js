@@ -1,27 +1,34 @@
-export const setMessageImg = (img) => {
+export const setNewMessages = (message) => {
   return {
-    type: 'SET_MSG_IMG',
-    payload: img
+    type: 'LOAD_CHANNEL_MESSAGES',
+    payload: message
   };
 };
 
-export const setMessageSender = (msg) => {
-  return {
-    type: 'SET_MSG_SENDER',
-    payload: msg
-  };
-};
+// export const setMessageImg = (img) => {
+//   return {
+//     type: 'SET_MSG_IMG',
+//     payload: img
+//   };
+// };
 
-export const setMessageBody = (msg) => {
-  return {
-    type: 'SET_MSG_BODY',
-    payload: msg
-  };
-};
+// export const setMessageSender = (msg) => {
+//   return {
+//     type: 'SET_MSG_SENDER',
+//     payload: msg
+//   };
+// };
 
-export const setMessageTimestamp = (timestamp) => {
-  return {
-    type: 'SET_MSG_TIMESTAMP',
-    payload: timestamp
-  };
-};
+// export const setMessageBody = (msg) => {
+//   return {
+//     type: 'SET_MSG_BODY',
+//     payload: msg
+//   };
+// };
+
+// export const setMessageTimestamp = (timestamp) => {
+//   return {
+//     type: 'SET_MSG_TIMESTAMP',
+//     payload: timestamp
+//   };
+// };

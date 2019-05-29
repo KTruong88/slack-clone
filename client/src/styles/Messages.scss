@@ -7,14 +7,13 @@
 }
 
 .message_line_container {
-  height: 57px;
   width: 100%;
 }
 
 .message_line {
   display: flex;
-  align-items: center;
-  height: 45px;
+  align-items: flex-start;
+  min-height: 45px;
   font-size: 15px;
   padding: 6px 0;
 }
@@ -22,13 +21,10 @@
 .message_gutter {
   display: flex;
   justify-content: flex-end;
-  width: 70px;
-  padding-right: 8px;
-}
-
-.icon_disney {
   height: 50px;
-  border-radius: 3px;
+  min-width: 70px;
+  max-width: 70px;
+  padding-right: 8px;
 }
 
 .message_content {
@@ -54,5 +50,41 @@
   width: 100%;
   color: #1d1c1d;
   word-wrap: break-word;
+  word-break: break-all;
   line-height: 1.46668;
+}
+
+// Icons
+
+.icon_disney {
+  height: 50px;
+  border-radius: 3px;
+}
+
+.icon_starwars {
+  height: 35px;
+  margin-right: 7px;
+  margin-top: 3px;
+  border-radius: 3px;
+}
+
+.icon_sports {
+  height: 35px;
+  margin-right: 7px;
+  margin-top: 3px;
+  border-radius: 3px;
+}
+
+.icon_cool_peeps {
+  height: 35px;
+  margin-right: 7px;
+  margin-top: 3px;
+  border-radius: 3px;
+}
+
+.icon_pokemon {
+  height: 35px;
+  margin-right: 7px;
+  margin-top: 3px;
+  border-radius: 3px;
 }

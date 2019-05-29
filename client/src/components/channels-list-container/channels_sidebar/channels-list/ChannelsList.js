@@ -1,11 +1,39 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import disneyMessages from '../../../../shared/utils/disneyMessages';
+import starWarsMessages from '../../../../shared/utils/starWarsMessages';
+import sportsMessages from '../../../../shared/utils/sportsMessages';
+import coolPeeps from '../../../../shared/utils/coolPeeps';
+import pokemon from '../../../../shared/utils/pokemon';
 
 import '../../../../styles/ChannelsList.scss';
 
-const setChannelBackground = (channel, currentChannel) => {
-  if (channel === currentChannel) {
-    return 'selected_channel';
+const setChannelMessages = (props) => {
+  const id = props.currentChannel.id;
+
+  switch (id) {
+    case 1:
+      props.setNewMessages(disneyMessages);
+      break;
+    case 2:
+      props.setNewMessages(starWarsMessages);
+      break;
+    case 3:
+      props.setNewMessages(sportsMessages);
+    break;
+    case 4:
+      props.setNewMessages(coolPeeps);
+    break;
+    case 5:
+      props.setNewMessages(pokemon);
+    break;
+
+    default: break;
   }
+};
+
+const setChannelBackground = (channel, currentChannel) => {
+  if (channel === currentChannel) return 'selected_channel';
 };
 
 const renderList = (props, currentChannel) => {
@@ -18,7 +46,7 @@ const renderList = (props, currentChannel) => {
           <div key={channel.id}
                onClick={() => props.setCurrentChannel(channel)}
                className="sidebar_channel overflow_ellipsis">
-          <span key={channel.id} className="sidebar_icon">#</span >{channel.name}</div>
+          <span key={channel.id} className="sidebar_icon">#</span>{channel.name}</div>
         </div>
       );
     })
@@ -26,6 +54,9 @@ const renderList = (props, currentChannel) => {
 };
 
 const ChannelsList = (props) => {
+  useEffect(() => {
+    setChannelMessages(props);
+  }, [props.currentChannel]);
   const currentChannel = props.currentChannel.name;
   
   return (

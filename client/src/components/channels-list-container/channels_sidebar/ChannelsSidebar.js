@@ -28,6 +28,7 @@ const ChannelsSidebar = (props) => {
         channels={props.channels}
         currentChannel={props.currentChannel}
         setCurrentChannel={props.setCurrentChannel}
+        setNewMessages={props.setNewMessages}
         />
       <DirectMessages />
     </div>

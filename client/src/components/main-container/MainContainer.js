@@ -13,7 +13,9 @@ const MainContainer = (props) => {
   return (
     <div className="main_container">
       <ChannelHeader currentChannel={props.channels.currentChannel} />
-      <MessagesContainer messages={props.messages} />
+      <MessagesContainer messages={props.messages} 
+                         currentChannel={props.currentChannel}
+              />
       <Footer currentChannel={props.channels.currentChannel} />
     </div>
   );
@@ -22,7 +24,8 @@ const MainContainer = (props) => {
 const mapStateToProps = (state) => {
   return {
     channels: state.channelsList,
-    messages: state.messages
+    currentChannel: state.channelsList.currentChannel,
+    messages: state.messages,
   };
 };
 

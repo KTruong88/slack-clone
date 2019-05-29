@@ -13,7 +13,7 @@ const MessagesHeader = (props) => {
       <div className="channel_title">
         <div className="channel_name_container">
           <span className="channel_name">
-            <img src={require('../../../../shared/icons/padlock.svg')} alt="icon of a lock by Dave Gandy" className="icon_lock"/>
+            <img src={require('../../../../shared/icons/misc/padlock.svg')} alt="icon of a lock by Dave Gandy" className="icon_lock"/>
             {currentChannel}
           </span>
         </div>
@@ -29,7 +29,7 @@ const MessagesHeader = (props) => {
           </div>
           <div className="info_separator">|</div>
           <div className="channel_header_info_item btn_add_topic">
-            <img src={require('../../../../shared/icons/edit.svg')} alt="icon of a lock by Slir" className="icon_edit"/>
+            <img src={require('../../../../shared/icons/misc/edit.svg')} alt="icon of a lock by Slir" className="icon_edit"/>
             Add a topic
           </div>
         </div>
