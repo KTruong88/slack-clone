@@ -28,6 +28,26 @@ const sportsMessages = [
     messageSender: 'Volleyball',
     messageTimestamp: '12:02 PM',
     messageBody: 'Dig!.. Pass.. Spike!!'
+  },
+  {
+    id: 4,
+    img: 'target.svg',
+    title: 'Icon made by Freepik from www.flaticon.com',
+    alt: 'archery',
+    path: 'sports',
+    messageSender: 'Archery',
+    messageTimestamp: '1:02 PM',
+    messageBody: 'Bullseye!'
+  },
+  {
+    id: 5,
+    img: 'bicycle.svg',
+    title: 'Icon made by Freepik from www.flaticon.com',
+    alt: 'bicycle',
+    path: 'sports',
+    messageSender: 'Cycling',
+    messageTimestamp: '3:22 PM',
+    messageBody: 'Swish..Swish...Swish...Clunky...Clunk....Click click click..'
   }
 ];
 

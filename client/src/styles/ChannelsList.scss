@@ -11,14 +11,32 @@
 }
 
 .sidebar_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: rgb(197, 183, 198);
   font-size: 16px;
   margin-left: 15px;
   letter-spacing: -.25px;
   cursor: pointer;
+}
 
+.sidebar_title_channels {
   &:hover {
     color: $color_white;
+  }
+}
+
+.icon_plus {
+  height: 14px;
+  width: 14px;
+  border: 1px solid rgb(197, 183, 198);
+  border-radius: 50%;
+  margin: 2px 15px 0 0;
+  fill: rgb(197, 183, 198);
+  
+  &:hover {
+    fill: $color_white;
   }
 }
 

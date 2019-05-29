@@ -6,6 +6,8 @@ import sportsMessages from '../../../../shared/utils/sportsMessages';
 import coolPeeps from '../../../../shared/utils/coolPeeps';
 import pokemon from '../../../../shared/utils/pokemon';
 
+import AddOutline from '@carbon/icons-react/es/add/20';
+
 import '../../../../styles/ChannelsList.scss';
 
 const setChannelMessages = (props) => {
@@ -61,7 +63,10 @@ const ChannelsList = (props) => {
   
   return (
     <div className="sidebar_list_container">
-      <div className="sidebar_title">Channels</div>
+      <div className="sidebar_title">
+      <span className="sidebar_title_channels">Channels</span>
+        <AddOutline className="icon_plus"/>
+      </div>
       {renderList(props, currentChannel)}
     </div>
   );

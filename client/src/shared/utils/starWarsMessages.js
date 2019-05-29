@@ -27,6 +27,16 @@ const starWarsMessages = [{
     messageSender: 'Lightsaber',
     messageTimestamp: '9:50 AM',
     messageBody: 'Schvrmmmmmmm!, Kwishuuuuuuuuuu!'
+  },
+  {
+    id: 4,
+    img: 'villain.svg',
+    title: 'Icon made by Freepik from www.flaticon.com',
+    alt: 'villian',
+    path: 'starwars',
+    messageSender: 'Villain',
+    messageTimestamp: '12:50 PM',
+    messageBody: 'uke.......me saught out farther...'
   }
 ];
 
