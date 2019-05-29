@@ -1,51 +1,64 @@
-import React from 'react';
+import React, { useState, useEffect }from 'react';
+
+// import profile from '../../../shared-components/profile';
 
 import '../../../../styles/Messages.scss';
 
-const getClassName = (currentChannel) => {
-  switch (currentChannel) {
-    case 'disney':
-      return 'icon_disney';
-    case 'star wars: the empire strikes back':
-      return 'icon_starwars';
-    case 'sports':
-      return 'icon_sports';
-    case 'cool peeps':
-      return 'icon_cool_peeps';
-    case 'pokemon':
-      return 'icon_pokemon';
-  default: break;
-  }
-};
-
-const renderMessages = (messages, currentChannel) => {
-  return (
-    messages.map(message => {
-      return (
-        <div className="message_line" key={message.id}>
-          <div className="message_gutter">
-            <img src={require(`../../../../shared/icons/${message.path}/${message.img}`)} 
-                 alt={`${message.alt}`}
-                 title={`${message.title}`}
-                 className={`${getClassName(currentChannel.name)}`}
-              />
-          </div>
-          <div className="message_content">
-            <div className="message_sender">
-              {message.messageSender}
-              <span className="message_timestamp">{message.messageTimestamp}</span>
-            </div>
-            <div className="message_body">
-              {message.messageBody}
-            </div>
-          </div>
-        </div>
-      );
-    })
-  );
-};
-
 const Messages = (props) => {
+  const [state, setShowProfile] = useState({showProfile: false});
+
+  useEffect(() => {
+    // setShowProfile({...state, showProfile: true });    
+  }, []);
+
+  const getClassName = (currentChannel) => {
+    switch (currentChannel) {
+      case 'disney':
+        return 'icon_disney';
+      case 'star wars: the empire strikes back':
+        return 'icon_starwars';
+      case 'sports':
+        return 'icon_sports';
+      case 'cool peeps':
+        return 'icon_cool_peeps';
+      case 'pokemon':
+        return 'icon_pokemon';
+    default: break;
+    }
+  };
+
+  const showProfile = () => {
+    
+  }
+
+  const renderMessages = (messages, currentChannel) => {
+    return (
+      messages.map(message => {
+        return (
+          <div className="message_line" key={message.id}>
+            <div className="message_gutter">
+              <img src={require(`../../../../shared/icons/${message.path}/${message.img}`)} 
+                  alt={`${message.alt}`}
+                  title={`${message.title}`}
+                  className={`portrait ${getClassName(currentChannel.name)}`}
+                />
+            </div>
+            <div className="message_content">
+              <div className="message_sender_wrap">
+                <span className="message_sender" onClick={() => showProfile()}
+                >{message.messageSender}</span>
+                <span className="message_timestamp">{message.messageTimestamp}</span>
+              </div>
+              <div className="message_body">
+                {message.messageBody}
+              </div>
+            </div>
+          </div>
+        );
+      })
+    );
+  };
+
   return (
     <div className="messages_wrap">
       <div className="message_line_container">
