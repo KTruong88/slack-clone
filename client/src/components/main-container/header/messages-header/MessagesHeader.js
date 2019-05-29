@@ -25,7 +25,7 @@ const MessagesHeader = (props) => {
           <div className="info_separator">|</div>
           <div className="channel_header_info_item btn_member_list" title="View member list">
             <User className="icon_user" />
-            <span className="users_count">25</span>
+            <span className="users_count">{props.currentChannel.membersCount}</span>
           </div>
           <div className="info_separator">|</div>
           <div className="channel_header_info_item btn_add_topic">

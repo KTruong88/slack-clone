@@ -1,12 +1,12 @@
 const initialState = {
   channels: [
-    { id: 1, name: 'disney' },
-    { id: 2, name: 'star wars: the empire strikes back' },
-    { id: 3, name: 'sports' },
-    { id: 4, name: 'cool peeps' },
-    { id: 5, name: 'pokemon' }
+    { id: 1, name: 'disney', membersCount: 12 },
+    { id: 2, name: 'star wars: the empire strikes back', membersCount: 16 },
+    { id: 3, name: 'sports', membersCount: 8 },
+    { id: 4, name: 'cool peeps', membersCount: 21 },
+    { id: 5, name: 'pokemon', membersCount: 150 }
   ],
-  currentChannel: { id: 1, name: 'disney' }
+  currentChannel: { id: 1, name: 'disney', membersCount: 12 }
 };
 
 const channelsList = (state = initialState, action) => {
