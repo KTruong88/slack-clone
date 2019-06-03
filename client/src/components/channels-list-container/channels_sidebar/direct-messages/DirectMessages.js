@@ -5,6 +5,8 @@ import '../../../../styles/DirectMessages.scss';
 
 const DirectMessages = () => {
   const renderDirectMessages = () => {
+    // TODO: map it from props
+    const users = ['Pikachu', 'Charmander', 'Squirtle', 'Bulbasaur', 'Ash', 'Mysty'];
     return (
       users.map((user, idx) => {
         return (
