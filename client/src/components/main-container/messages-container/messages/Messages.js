@@ -1,15 +1,27 @@
-import React, { useState, useEffect }from 'react';
+import React, { useState, useEffect, useRef }from 'react';
 
-// import profile from '../../../shared-components/profile';
+import profile from '../../../shared-components/profile';
 
 import '../../../../styles/Messages.scss';
 
 const Messages = (props) => {
-  const [state, setShowProfile] = useState({showProfile: false});
+  const node = useRef();
+  const [showProfile, setProfileCard] = useState(false);
+  const [profileId, setProfileId] = useState();
 
   useEffect(() => {
-    // setShowProfile({...state, showProfile: true });    
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, []);
+
+  const handleClickOutside = (e) => {
+    if (!node.current.contains(e.target)) {
+      return setProfileCard(false);
+    }
+  };
 
   const getClassName = (currentChannel) => {
     switch (currentChannel) {
@@ -27,9 +39,10 @@ const Messages = (props) => {
     }
   };
 
-  const showProfile = () => {
-    
-  }
+  const handleProfile = (e, id) => {
+    setProfileId(id);
+    showProfile ? setProfileCard(false) : setProfileCard(true);
+  };
 
   const renderMessages = (messages, currentChannel) => {
     return (
@@ -37,7 +50,7 @@ const Messages = (props) => {
         return (
           <div className="message_line" key={message.id}>
             <div className="message_gutter">
-              <img src={require(`../../../../shared/icons/${message.path}/${message.img}`)} 
+              <img src={require(`../../../../shared/icons/${message.path}/${message.img}`)}
                   alt={`${message.alt}`}
                   title={`${message.title}`}
                   className={`portrait ${getClassName(currentChannel.name)}`}
@@ -45,8 +58,12 @@ const Messages = (props) => {
             </div>
             <div className="message_content">
               <div className="message_sender_wrap">
-                <span className="message_sender" onClick={() => showProfile()}
-                >{message.messageSender}</span>
+                <span className="message_sender"
+                      ref={node}
+                      onClick={(e) => handleProfile(e, message.id)}>
+                      {message.messageSender}
+                      {showProfile && profileId === message.id && profile()}
+                </span>
                 <span className="message_timestamp">{message.messageTimestamp}</span>
               </div>
               <div className="message_body">

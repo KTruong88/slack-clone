@@ -4,9 +4,9 @@
 .profile_content {
   // 320 x 590
   position: absolute;
-  z-index: 1042;
-  display: inline-block;
-  vertical-align: top;
+  z-index: 100;
+  right: -23rem;
+  bottom: -1rem;
   min-width: 200px;
   max-width: 360px;
   color: #1d1c1d;

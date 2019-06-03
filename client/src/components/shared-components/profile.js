@@ -1,8 +1,8 @@
 import React from 'react';
 
-import '../../styles/profile.scss';
+import '../../styles/Profile.scss';
 
-const profile = () => {
+const Profile = () => {
   return (
     <div className="profile_content">
       profile cardprofile cardprofile cardprofile cardprofile cardprofile
@@ -10,4 +10,4 @@ const profile = () => {
   );
 };
 
-export default profile;
+export default Profile;
