@@ -9,19 +9,19 @@ const Messages = (props) => {
   const [showProfile, setProfileCard] = useState(false);
   const [profileId, setProfileId] = useState();
 
-  useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
+  // useEffect(() => {
+  //   document.addEventListener("mousedown", handleClickOutside);
 
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener("mousedown", handleClickOutside);
+  //   };
+  // }, []);
 
-  const handleClickOutside = (e) => {
-    if (!node.current.contains(e.target)) {
-      return setProfileCard(false);
-    }
-  };
+  // const handleClickOutside = (e) => {
+  //   if (!node.current.contains(e.target)) {
+  //     return setProfileCard(false);
+  //   }
+  // };
 
   const getClassName = (currentChannel) => {
     switch (currentChannel) {
